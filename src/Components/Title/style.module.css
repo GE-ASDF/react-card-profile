@@ -1,0 +1,7 @@
+.bigTitle{
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+.bigTitle:hover{
+    color:#ff4d00;
+}

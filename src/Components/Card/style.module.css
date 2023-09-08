@@ -17,23 +17,10 @@
     height: 16rem;
 }
 
-.bigTitle{
-    font-size: 2rem;
-    transition: all 0.3s ease;
-}
 
-.separator{
-    border-top: 1px solid #232323;
-    border-bottom: 1px solid #232323;
-    padding:2rem;
-    text-align: center;
-}
 .socialMedia{
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     margin-top: 10px;
-}
-.bigTitle:hover{
-    color:#ff4d00;
 }

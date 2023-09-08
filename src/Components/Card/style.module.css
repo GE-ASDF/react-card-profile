@@ -1,0 +1,34 @@
+.card{
+    background-color: #e5e5e5e5;
+    padding:2rem;
+    border-radius: 0.25rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cardImage{
+    text-align: center;
+    margin-bottom:2rem;
+}
+.cardImage img{
+    border-radius: 50%;
+    max-height: max-content;
+    width:16rem;
+    height: 16rem;
+}
+
+.bigTitle{
+    font-size: 2rem;
+}
+.separator{
+    border-top: 1px solid #232323;
+    border-bottom: 1px solid #232323;
+    padding:2rem;
+    text-align: center;
+}
+.socialMedia{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-top: 10px;
+}

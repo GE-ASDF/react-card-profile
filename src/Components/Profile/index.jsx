@@ -2,6 +2,7 @@ import style from "./style.module.css";
 import LinkButton from "../LinkButton";
 import Title from "../Title";
 import ProfileSection from "./ProfileSection";
+import { useState } from "react";
 
 function HandlerContacts(contact){
     return (
@@ -9,8 +10,21 @@ function HandlerContacts(contact){
     )
 }
 
+
+
 export default function Card({info}){
+
     let keysContacts = Object.keys(info.contacts);
+    const [followText, setFollowText] = useState('Follow')
+
+    function handleClick(e){
+        e.preventDefault();
+        if(followText.toLowerCase() == 'following'){
+            setFollowText('Follow');
+        }else{
+            setFollowText('Following');
+        }
+    }
 
     return (
         <>
@@ -19,6 +33,13 @@ export default function Card({info}){
                     <img src={info.avatar} alt="Imagem do perfil" />
                     <Title>
                         {info.name}
+                        <button
+                         id="btnFollow"
+                         onClick={handleClick}
+                         className={`${style.btn} ${style.btnFollow}`}
+                         >
+                            {followText}
+                         </button>
                     </Title>
                 </div>
 

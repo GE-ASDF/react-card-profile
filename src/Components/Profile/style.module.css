@@ -26,3 +26,24 @@
     justify-content: center;
     margin-top: 10px;
 }
+
+.btn.btnFollow{
+    background: linear-gradient(to right, hsl(210, 92%, 39%), hsl(210, 92%, 45%), hsl(210, 92%, 50%));
+    color:#fff;
+}
+
+.btn{
+    padding:0.75rem;
+    border-radius: 0.25rem;
+    margin:5px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.btn.btnFollow:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, hsl(210, 92%, 39%), hsl(210, 92%, 45%), hsl(210, 92%, 50%));
+    transition: 0.3s;
+}

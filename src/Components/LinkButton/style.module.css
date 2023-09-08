@@ -7,4 +7,10 @@
     margin:5px;
     width:100px;
     text-align: center;
+    transition: all 0.3s ease-in;
+}
+.linkButton:hover{
+    background: linear-gradient(to left, hsl(210, 92%, 39%), hsl(210, 92%, 45%), hsl(210, 92%, 50%));
+    transition: 0.3s;
+    margin-left:10px;
 }

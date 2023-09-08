@@ -1,6 +1,6 @@
 import Card from "./Components/Card/Card";
 import style from "./styles/App.module.css";
-import ansu from "./assets/ansu.jpg";
+import ansu from "./assets/profile.avif";
 
 export default function App(){
   let info = {

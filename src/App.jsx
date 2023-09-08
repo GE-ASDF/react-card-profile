@@ -1,4 +1,4 @@
-import Card from "./Components/Card";
+import Card from "./Components/Profile";
 import style from "./styles/App.module.css";
 import ansu from "./assets/profile.avif";
 

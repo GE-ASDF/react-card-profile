@@ -2,7 +2,7 @@ import style from "./style.module.css";
 
 export default function LinkButton(props){
     return (
-        <a className={style.linkButton} href={props.link}>
+        <a {...props} className={style.linkButton}>
             {props.children}    
         </a>
     )

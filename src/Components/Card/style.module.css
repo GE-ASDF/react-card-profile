@@ -17,10 +17,12 @@
     height: 16rem;
 }
 
+.separator{
+    border-bottom:1px solid #000;
+}
 
 .socialMedia{
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     margin-top: 10px;
 }

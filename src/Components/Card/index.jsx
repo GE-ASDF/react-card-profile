@@ -5,7 +5,7 @@ import ProfileSection from "./ProfileSection";
 
 function HandlerContacts(contact){
     return (
-        <ProfileSection> {contact} </ProfileSection>
+        <ProfileSection className={style.separator}> {contact} </ProfileSection>
     )
 }
 
@@ -22,17 +22,21 @@ export default function Card({info}){
                     </Title>
                 </div>
 
-                <ProfileSection >
+                <ProfileSection className={style.separator}>
                     {info.bio}
                 </ProfileSection>
 
                 {keysContacts.map(key => HandlerContacts(info.contacts[key]))}
-                <ProfileSection>
-                    <div className={style.socialMedia}>
-                        <LinkButton link={info.social.github.link}>{info.social.github.text}</LinkButton>
-                        <LinkButton link={info.social.linkedin.link}>{info.social.linkedin.text}</LinkButton>
-                        <LinkButton link={info.social.twitter.link}>{info.social.twitter.text}</LinkButton>
-                    </div>
+
+                <ProfileSection 
+                    className={style.socialMedia}
+                    id="links-section"
+                    aria-label="Social links"
+                    data-test="some value"
+                >
+                    <LinkButton target="_blank" href={info.social.github.link}>{info.social.github.text}</LinkButton>
+                    <LinkButton target="_blank" href={info.social.linkedin.link}>{info.social.linkedin.text}</LinkButton>
+                    <LinkButton target="_blank" href={info.social.twitter.link}>{info.social.twitter.text}</LinkButton>
                 </ProfileSection>
             </div>
         </>
